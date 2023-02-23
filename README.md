@@ -34,9 +34,11 @@ Useful demo:
  
 # References
 
-[1] https://arxiv.org/pdf/2211.16337.pdf 
+[1] [main reference](https://arxiv.org/pdf/2211.16337.pdf)
 
-[2] https://arxiv.org/pdf/2210.10610.pdf
+[2] [Maria Schuld's kernel method for graph problem, could use some inspirations for dataset/benchmark](https://arxiv.org/pdf/1905.12646.pdf)
+
+[3] [related to quantum enhanced GNN](https://arxiv.org/pdf/2210.10610.pdf)
 
 ## Some related references
 
