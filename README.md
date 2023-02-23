@@ -7,14 +7,16 @@
 
 1. We want to implement the quantum feature map (QEK) in reference [1], where they demonstrate a competitive result in classifying graph-structured datasets compared to graph neural networks (GNN). 
 2. We can implement quantum GNN for the same classification tasks.
-3. We aim to improve the accuracy of QGNN by use of CAFQA [4] to get best initialization points for QGNN. Since, CAFQA works on classical simulator we wish to demonstrate the symbiosis of classical computing and Quantum computing leading to improvement of QC performance.
+3. We aim to improve the accuracy of QGNN classification by use of CAFQA [4] to get best initialization points for the QGNN ansatz. Since, CAFQA works on classical simulator we wish to demonstrate the symbiosis of classical computing and Quantum computing leading to improvement of QC performance.
 
-## Getting started
+## Workflow
 
 **Here are some steps::**
 1. Set up AWS Bracket, because it will be convenient to use this. 
  - see [tutorial notebook](tutorialAWS.ipynb)
-2. Finding dataset in reference [1]. #teng10: we will also need a very small toy dataset (~12 nodes?), rather than the full dataset there. We can also generate our own to begin with, probably the easiest way. 
+2. Candidate dataset: ogbl-ddi 
+The ogbl-ddi dataset is a homogeneous, unweighted, undirected graph, representing the drug-drug interaction network. Each node represents an FDA-approved or experimental drug. Edges represent interactions between drugs and can be interpreted as a phenomenon where the joint effect of taking the two drugs together is considerably different from the expected effect in which drugs act independently of each other.
+Plus: Finding dataset in reference [1]. We will also generate our own to begin with, probably the easiest way. 
     - add description of the dataset 
     - describe what are the impacts of successful classifications
 3. One thing still worth looking into is how does the training work? 
