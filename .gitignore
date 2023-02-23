@@ -1,0 +1,5 @@
+# python
+venv/
+
+# mac
+.DS_Store
