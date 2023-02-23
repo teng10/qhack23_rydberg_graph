@@ -7,6 +7,7 @@
 
 1. We want to implement the quantum feature map (QEK) in reference [1], where they demonstrate a competitive result in classifying graph-structured datasets compared to graph neural networks (GNN). 
 2. We can implement quantum GNN for the same classification tasks.
+3. We aim to improve the accuracy of QGNN by use of CAFQA [4] to get best initialization points for QGNN. Since, CAFQA works on classical simulator we wish to demonstrate the symbiosis of classical computing and Quantum computing leading to improvement of QC performance.
 
 ## Getting started
 
@@ -20,6 +21,7 @@
 
     - In the paper, there are a few steps:
         - choose hamiltonian parameter evolution time $t$ (so that all the parameters in the hamiltonian $\Omega(t)$ and $\delta(t)$ will be fixed)
+        - determine best initialization points on classical computer using CAFQA
         - use neural atom QPU to simulate the evolution and hence the kernel
         - postprocess with SVM and proceed with classification
     - can we use a variant of the training procedure?
@@ -39,6 +41,8 @@ Useful demo:
 [2] [Maria Schuld's kernel method for graph problem, could use some inspirations for dataset/benchmark](https://arxiv.org/pdf/1905.12646.pdf)
 
 [3] [related to quantum enhanced GNN](https://arxiv.org/pdf/2210.10610.pdf)
+
+[4] [CAFQA] https://arxiv.org/abs/2202.12924
 
 ## Some related references
 
