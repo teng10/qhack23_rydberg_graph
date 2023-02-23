@@ -12,13 +12,12 @@
 ## Workflow
 
 **Here are some steps::**
-1. Set up AWS Bracket, because it will be convenient to use this. 
+1. Set up AWS Bracket, because it will be convenient to use Amazon SKD to efficiently implement the Hybrid Algorithm we are thinking about. 
  - see [tutorial notebook](tutorialAWS.ipynb)
 2. Candidate dataset: ogbl-ddi 
 The ogbl-ddi dataset is a homogeneous, unweighted, undirected graph, representing the drug-drug interaction network. Each node represents an FDA-approved or experimental drug. Edges represent interactions between drugs and can be interpreted as a phenomenon where the joint effect of taking the two drugs together is considerably different from the expected effect in which drugs act independently of each other.
-Plus: Finding dataset in reference [1]. We will also generate our own to begin with, probably the easiest way. 
-    - add description of the dataset 
-    - describe what are the impacts of successful classifications
+Plus: Finding dataset in reference [1], and benchmark our results with the reference paper. We will also generate our own dataset to begin with, probably the most straigthforward way to set up the initial parameters and get an idea of where there is room for optimization. 
+    
 3. One thing still worth looking into is how does the training work? 
 
     - In the paper, there are a few steps:
@@ -41,7 +40,7 @@ Useful demo:
 
 [1] [main reference](https://arxiv.org/pdf/2211.16337.pdf)
 
-[2] [Maria Schuld's kernel method for graph problem, could use some inspirations for dataset/benchmark](https://arxiv.org/pdf/1905.12646.pdf)
+[2] [Maria Schuld's kernel method for graph problem based on  Gaussian Boson Sampler---> benchmark](https://arxiv.org/pdf/1905.12646.pdf)
 
 [3] [related to quantum enhanced GNN](https://arxiv.org/pdf/2210.10610.pdf)
 
