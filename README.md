@@ -15,7 +15,7 @@
 1. Set up AWS Bracket, because it will be convenient to use Amazon SKD to efficiently implement the Hybrid Algorithm we are thinking about. 
  - see [tutorial notebook](tutorialAWS.ipynb)
 2. Candidate dataset: ogbl-ddi 
-The ogbl-ddi dataset is a homogeneous, unweighted, undirected graph, representing the drug-drug interaction network. Each node represents an FDA-approved or experimental drug. Edges represent interactions between drugs and can be interpreted as a phenomenon where the joint effect of taking the two drugs together is considerably different from the expected effect in which drugs act independently of each other.
+-The ogbl-ddi dataset is a homogeneous, unweighted, undirected graph, representing the drug-drug interaction network. Each node represents an FDA-approved or experimental drug. Edges represent interactions between drugs and can be interpreted as a phenomenon where the joint effect of taking the two drugs together is considerably different from the expected effect in which drugs act independently of each other.
 Plus: Finding dataset in reference [1], and benchmark our results with the reference paper. We will also generate our own dataset to begin with, probably the most straigthforward way to set up the initial parameters and get an idea of where there is room for optimization. 
     
 3. One thing still worth looking into is how does the training work? 
