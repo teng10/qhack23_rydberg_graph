@@ -1,7 +1,7 @@
 # qhack23_project
 ==================
  - Team name: QuantuMother
- - In this Readme.md for QHack 2023 `project name`, we are including notebooks or pdfs in this repository. This repository will contain the entire project.
+ - In this Readme.md for QHack 2023 `Quantum Graph Neural Network for graph structured data using classical initialization`, we are including notebooks or pdfs in this repository. This repository will contain the entire project.
 
 ## Completion Criteria:
 
@@ -25,7 +25,7 @@ Plus: Finding dataset in reference [1], and benchmark our results with the refer
         - determine best initialization points on classical computer using CAFQA
         - use neural atom QPU to simulate the evolution and hence the kernel
         - postprocess with SVM and proceed with classification
-    - can we use a variant of the training procedure?
+    - Can we use a variant of the training procedure incorporating CAFQA?
     - Reason to use CAFQA - VQA's and many QML methods are sensitive to points where they are intialized. If they are initialized at proper points they may reach converegence faster and have a lower risk of getting stuck at local minimas. CAFQA converts the ansatz of VQA and QML methods into clifford circuits which are efficiently simulable on classical computers and obtains the intialization points. Once, we find the best intialization points using CAFQA, VQA's have been shown to reach better accuracies with faster converegcne rates. We envision similar acceleration for our QGNN approach.
     - see Figure 3: ![diagram](training_diagram.png)
 
@@ -38,11 +38,11 @@ Useful demo:
  
 # References
 
-[1] [main reference](https://arxiv.org/pdf/2211.16337.pdf)
+[1] [Main reference for QEK with neural atoms](https://arxiv.org/pdf/2211.16337.pdf)
 
-[2] [Maria Schuld's kernel method for graph problem based on  Gaussian Boson Sampler---> benchmark](https://arxiv.org/pdf/1905.12646.pdf)
+[2] [Another kernel method for graph problem based on  Gaussian Boson Sampler---> benchmark](https://arxiv.org/pdf/1905.12646.pdf)
 
-[3] [related to quantum enhanced GNN](https://arxiv.org/pdf/2210.10610.pdf)
+[3] [Quantum enhanced GNN](https://arxiv.org/pdf/2210.10610.pdf)
 
 [4] [CAFQA] https://arxiv.org/abs/2202.12924
 
