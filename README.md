@@ -25,6 +25,7 @@
         - use neural atom QPU to simulate the evolution and hence the kernel
         - postprocess with SVM and proceed with classification
     - can we use a variant of the training procedure?
+    - Reason to use CAFQA - VQA's and many QML methods are sensitive to points where they are intialized. If they are initialized at proper points they may reach converegence faster and have a lower risk of getting stuck at local minimas. CAFQA converts the ansatz of VQA and QML methods into clifford circuits which are efficiently simulable on classical computers and obtains the intialization points. Once, we find the best intialization points using CAFQA, VQA's have been shown to reach better accuracies with faster converegcne rates. We envision similar acceleration for our QGNN approach.
     - see Figure 3: ![diagram](training_diagram.png)
 
 Useful demo:
