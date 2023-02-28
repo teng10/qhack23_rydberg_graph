@@ -9,6 +9,7 @@
 2. We can implement quantum GNN for the same classification tasks.
 3. We aim to improve the accuracy of QGNN classification by use of CAFQA [4] to get best initialization points for the QGNN ansatz. Since, CAFQA works on classical simulator we wish to demonstrate the symbiosis of classical computing and Quantum computing leading to improvement of QC performance.
 
+[Presentation](https://docs.google.com/presentation/d/1Wuv7EtU-KJm0gStl8GUhptq0lXEqrKhG2jeLSjxC7D4/edit#slide=id.g21368949250_0_133)
 ## Workflow
 
 **Here are some steps::**
