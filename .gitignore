@@ -1,5 +1,8 @@
 # python
 venv/
 
+# results folder have large files
+results_QEK/**
+!results_QEK/kernels/
 # mac
 .DS_Store
