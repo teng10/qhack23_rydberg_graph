@@ -4,9 +4,9 @@
  - In this Readme.md for QHack 2023 `Quantum kernel methods for graph-structured data
 `, we are including notebooks or pdfs in this repository. This repository will contain the entire project.
 
-[Presentation Google slides](https://docs.google.com/presentation/d/1Wuv7EtU-KJm0gStl8GUhptq0lXEqrKhG2jeLSjxC7D4/edit#slide=id.g21368949250_0_133)
+[Presentation Google slides](https://docs.google.com/presentation/d/1Wuv7EtU-KJm0gStl8GUhptq0lXEqrKhG2jeLSjxC7D4/edit#slide=id.p)
 
-## Completion Criteria:
+## Summary:
 
 1. We implemented the quantum feature map (QEK) in reference [1], in three different approaches:
     1. AWS Braket local simulater. We use Braket's module `analog_hamiltonian_simulation` for simulating the Rydberg hamiltonian.  See [demo notebook Braket](demos/demo_two_graphs_braket.ipynb) in `demos/` folder.
@@ -19,7 +19,7 @@ See [qoda code](qoda_code.py) and [slide 16](https://docs.google.com/presentatio
 
 ## Results
 
-1. We (qualitatively) reproduced results in Ref [1], using a toy model of two simple graphs using Braket simulator. We see QEK's capability of learning an optimal evolution time to achieve maximum distinguishability between two graphs. ([Slide 7](https://docs.google.com/presentation/d/1Wuv7EtU-KJm0gStl8GUhptq0lXEqrKhG2jeLSjxC7D4/edit#slide=id.g2135e9cb0b3_0_5) )
+1. We (qualitatively) reproduced results in Ref [1], using a toy model of two simple graphs using Braket simulator. We see QEK's capability of learning an optimal evolution time to achieve maximum distinguishability between two graphs. ([Slide 6](https://docs.google.com/presentation/d/1Wuv7EtU-KJm0gStl8GUhptq0lXEqrKhG2jeLSjxC7D4/edit#slide=id.g2135e9cb0b3_0_5) )
 2. We implemented a truncated and trotterized version of QEK using PennyLane. We find that with only such short range interactions, no optimal time is present, and therefore we suggest the long-range interactions on Aquila neural atom QPU are important. ([slide 9](https://docs.google.com/presentation/d/1Wuv7EtU-KJm0gStl8GUhptq0lXEqrKhG2jeLSjxC7D4/edit#slide=id.g21368949250_0_144))
 3. To demonstrate QEK's capability beyond the toy model, we ran the same algorithm on two graphs from PTC-FM dataset, and we found optimal evolution time. **TODO**: We want to finish training and analyzing the full PTC-FM dataset, which is in progress. 
 
